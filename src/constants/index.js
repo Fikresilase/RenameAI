@@ -37,26 +37,30 @@ import {
 } from "../assets";
 
 export const navigation = [
+  
+  
   {
     id: "0",
+    title: "Home",
+    url: "#hero",
+  },
+  
+  {
+    id: "1",
     title: "Features",
     url: "#features",
   },
   {
-    id: "1",
+    id: "2",
     title: "Pricing",
     url: "#pricing",
   },
-  {
-    id: "2",
-    title: "How to use",
-    url: "#how-to-use",
-  },
-  {
-    id: "3",
-    title: "Roadmap",
-    url: "#roadmap",
-  },
+  
+  // {
+  //   id: "3",
+  //   title: "Roadmap",
+  //   url: "#roadmap",
+  // },
   {
     id: "4",
     title: "New account",
@@ -208,38 +212,32 @@ export const collabApps = [
 export const pricing = [
   {
     id: "0",
-    title: "Basic",
-    description: "AI chatbot, personalized recommendations",
-    price: "0",
+    title: "Standard",
+    description: "Comprehensive image naming, tagging, and organizing features",
+    price: "25",
     features: [
-      "An AI chatbot that can understand your queries",
-      "Personalized recommendations based on your preferences",
-      "Ability to explore the app and its features without any cost",
+      "AI-powered image naming and tagging for efficient organization",
+      "Advanced categorization options to keep your images organized",
+      "Detailed analytics on tagging and organizing performance",
+      "Standard support for any issues or questions",
     ],
   },
   {
     id: "1",
-    title: "Premium",
-    description: "Advanced AI chatbot, priority support, analytics dashboard",
-    price: "9.99",
-    features: [
-      "An advanced AI chatbot that can understand complex queries",
-      "An analytics dashboard to track your conversations",
-      "Priority support to solve issues quickly",
-    ],
-  },
-  {
-    id: "2",
     title: "Enterprise",
-    description: "Custom AI chatbot, advanced analytics, dedicated account",
+    description: "Customized solutions with premium support and advanced features",
     price: null,
     features: [
-      "An AI chatbot that can understand your queries",
-      "Personalized recommendations based on your preferences",
-      "Ability to explore the app and its features without any cost",
+      "Custom AI solutions for tailored image naming, tagging, and organization",
+      "Advanced analytics and reporting for in-depth insights",
+      "Dedicated account manager for personalized support",
+      "Priority support with fast issue resolution and additional customization options",
     ],
   },
 ];
+
+
+
 
 export const benefits = [
   {
