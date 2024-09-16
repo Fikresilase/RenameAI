@@ -1,8 +1,15 @@
 import { check } from "../assets";
 import { pricing } from "../constants";
 import Button from "./Button";
+import { useNavigate } from "react-router-dom"; // Import useNavigate
 
 const PricingList = () => {
+  const navigate = useNavigate(); // Initialize navigate
+
+  const gotodirection = () => {
+    navigate("/direction"); // Use navigate to route to the directions page
+  };
+
   return (
     <div className="flex gap-[1rem] max-lg:flex-wrap">
       {pricing.map((item) => (
@@ -28,8 +35,8 @@ const PricingList = () => {
           </div>
 
           <Button
+            onClick={gotodirection}
             className="w-full mb-6"
-            href={item.price ? "/pricing" : "mailto:contact@jsmastery.pro"}
             white={!!item.price}
           >
             {item.price ? "Get started" : "Contact us"}

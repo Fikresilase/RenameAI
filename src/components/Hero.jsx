@@ -5,12 +5,18 @@ import { BackgroundCircles, BottomLine, Gradient } from "./design/Hero";
 import { heroIcons } from "../constants";
 import { ScrollParallax } from "react-just-parallax";
 import { useRef } from "react";
-import Generating from "./Generating";
-import Notification from "./Notification";
-import CompanyLogos from "./CompanyLogos";
+// import Generating from "./Generating";
+// import Notification from "./Notification";
+// import CompanyLogos from "./CompanyLogos";
+import { useNavigate } from "react-router-dom"; // Import useNavigate
 
 const Hero = () => {
   const parallaxRef = useRef(null);
+  const navigate = useNavigate(); // Initialize navigate
+
+  const gotodirection = () => {
+    navigate("/direction"); // Use navigate to route to the directions page
+  };
 
   return (
     <Section
@@ -26,10 +32,10 @@ const Hero = () => {
             Revolutionize Image Management with&nbsp;RenameAI
           </h1>
           <p className="body-1 max-w-3xl mx-auto mb-6 text-n-2 lg:mb-8">
-            RenameAI harnesses the power of AI to automatically name and tag your images, simplifying organization and enhancing your workflow. Effortlessly categorize and find your images with intelligent tagging.
+            RenameAI is a desktop app that uses AI to automatically name and tag your images, simplifying organization and boosting your workflow. Easily categorize and find your photos with smart tagging.
           </p>
-          <Button href="/pricing" white>
-            Get Started
+          <Button onClick={gotodirection} white>
+            Get the App
           </Button>
         </div>
         <div className="relative max-w-[23rem] mx-auto md:max-w-5xl xl:mb-24">
@@ -45,7 +51,6 @@ const Hero = () => {
 
           <BackgroundCircles />
         </div>
-
       </div>
 
       <BottomLine />

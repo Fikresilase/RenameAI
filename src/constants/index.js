@@ -56,20 +56,16 @@ export const navigation = [
     url: "#pricing",
   },
   
-  // {
-  //   id: "3",
-  //   title: "Roadmap",
-  //   url: "#roadmap",
-  // },
+ 
   {
     id: "4",
-    title: "New account",
+    title: "Explore",
     url: "#signup",
     onlyMobile: true,
   },
   {
     id: "5",
-    title: "Sign in",
+    title: "Get renameAI ",
     url: "#login",
     onlyMobile: true,
   },
